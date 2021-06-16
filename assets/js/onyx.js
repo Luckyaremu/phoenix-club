@@ -696,3 +696,26 @@ function myFunction() {
       moreText.style.display = "inline";
     }
   }
+
+  const save = document.getElementById("myBtn5");
+  const more = "read-more";
+  const less = "read-less"
+
+  const selectedMore = localStorage.getItem("selected-more");
+  const selectedLess = localStorage.getItem("selected-less");
+
+  const getCurrentMore = () => document.body.classList.contains(more)? "readmore" : "readless";
+  const getCurrentLess = () => save.body.classList.contains(less)? "readless" : "read";
+
+  if (selectedMore){
+      document.body.classList[selectedLess === "readmore" ? "readless" : "remove" ] (more)
+      sav.classList[selectedMore === "readless" ? "readmore" : "remove" ] (less)
+  }
+
+  save.addEventListener("click", ()=>{
+      document.body.classList.toggle(more)
+      save.classList.toggle(less)
+
+      localStorage.setRead('selected-more', getCurrentMore());
+      localStorage.setLess('selected-less', getCurrentLess());
+  })
