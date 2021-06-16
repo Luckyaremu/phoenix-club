@@ -6266,6 +6266,47 @@ a#submit-btn {
 .portfolio-box{
   background-color: lightgray;
   height: 300px;
-  width: 300px;
+  width: 100%;
   margin-bottom: 20px;
+}
+
+
+@media screen and (min-width: 414px){
+  .portfolio-01{
+      padding-left: 10px;
+  }
+}
+
+@media screen and (min-width: 375px){
+  .portfolio-01{
+      padding-left: 10px;
+  }
+}
+
+@media screen and (min-width: 360px){
+  .portfolio-01{
+      padding-left: 10px;
+  }
+}
+
+@media screen and (min-width: 411px){
+  .portfolio-01{
+      padding-left: 10px;
+  }
+}
+
+@media screen and (min-width: 540px){
+  .portfolio-01{
+      padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 280px){
+  .portfolio-box{
+      width: 250px;
+  }
+}
+
+.bronze{
+  padding-bottom: 40px;
 }
