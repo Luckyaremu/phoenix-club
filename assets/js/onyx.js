@@ -695,27 +695,32 @@ function myFunction() {
       btnText.innerHTML = "Read less"; 
       moreText.style.display = "inline";
     }
+    //var save = document.getElementById("area").nodeValue;
+    //localStorage.setItem("save", save);
+
+    //var save = localStorage.getItem("save");
+    //document.getElementById("area").value = save;
   }
 
-  const save = document.getElementById("myBtn5");
-  const more = "read-more";
-  const less = "read-less"
+  //const save = document.getElementById("myBtn5");
+  //const more = "read-more";
+  //const less = "read-less"
 
-  const selectedMore = localStorage.getItem("selected-more");
-  const selectedLess = localStorage.getItem("selected-less");
+  //const selectedMore = localStorage.setItem("selected-more");
+  //const selectedLess = localStorage.getItem("selected-less");
 
-  const getCurrentMore = () => document.body.classList.contains(more)? "readmore" : "readless";
-  const getCurrentLess = () => save.body.classList.contains(less)? "readless" : "read";
+  //const getCurrentMore = () => document.body.classList.contains(more)? "readmore" : "readless";
+  //const getCurrentLess = () => save.body.classList.contains(less)? "readless" : "read";
 
-  if (selectedMore){
-      document.body.classList[selectedLess === "readmore" ? "readless" : "remove" ] (more)
-      sav.classList[selectedMore === "readless" ? "readmore" : "remove" ] (less)
-  }
+  //if (selectedMore){
+  //    document.body.classList[selectedLess === "readmore" ? "readless" : "remove" ] (more)
+   //   save.classList[selectedMore === "readless" ? "readmore" : "remove" ] (less)
+  //}
 
-  save.addEventListener("click", ()=>{
-      document.body.classList.toggle(more)
-      save.classList.toggle(less)
+  //save.addEventListener("click", (e)=>{
+  //    document.body.classList.toggle(more)
+  //    save.classList.toggle(less)
 
-      localStorage.setRead('selected-more', getCurrentMore());
-      localStorage.setLess('selected-less', getCurrentLess());
-  })
+//      localStorage.setItem('read-more', JSON.stringify(more));
+//      localStorage.getItem('read-less', JSON.stringify(less));
+ // })
