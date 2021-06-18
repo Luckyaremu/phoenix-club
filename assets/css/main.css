@@ -6310,3 +6310,7 @@ a#submit-btn {
 .bronze{
   padding-bottom: 40px;
 }
+
+.summary{
+  outline: none;
+}
