@@ -695,11 +695,13 @@ function myFunction() {
       btnText.innerHTML = "Read less"; 
       moreText.style.display = "inline";
     }
-    //var save = document.getElementById("area").nodeValue;
-    //localStorage.setItem("save", save);
+    var save = document.getElementById("myBtn5").nodeValue;
+    localStorage.setItem("save", save);
 
-    //var save = localStorage.getItem("save");
-    //document.getElementById("area").value = save;
+    var save = localStorage.getItem("save");
+    document.getElementById("myBtn5").value = save;
+
+    console.log(save)
   }
 
   //const save = document.getElementById("myBtn5");
